@@ -1,0 +1,18 @@
+{
+  "name": "hospitalflow-ai",
+  "version": "1.0.0",
+  "description": "HospitalFlow AI Operations Dashboard",
+  "main": "backend/main.py",
+  "scripts": {
+    "postinstall": "pip install -r requirements.txt || python3 -m pip install --break-system-packages -r requirements.txt || python3 -m pip install -r requirements.txt",
+    "build": "pip install -r requirements.txt || python3 -m pip install --break-system-packages -r requirements.txt || python3 -m pip install -r requirements.txt",
+    "start": "python3 -m uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"
+  },
+  "keywords": [
+    "hospitalflow",
+    "fastapi",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "ISC"
+}
